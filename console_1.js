@@ -26,6 +26,11 @@
                 // utterance.pitch = 1;
 
                 synth.speak(utterance);
+
+                // Display a message after text is converted to audio
+                const message = 'Text is being converted to audio. Check your speakers!';
+                alert(message);
+                console.log(message); // Log the message to the console
             } else {
                 alert('Web Speech API is not supported in this browser');
             }
